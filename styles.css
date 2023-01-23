@@ -66,7 +66,6 @@ body {
     height: 80vh;
     /* width: 100vw; */
     /* justify-content: center; */
-    /* margin: 0 auto 6rem auto; */
     flex-direction: column;
     font-size: larger;
     color: rgb(254, 254, 254);
@@ -76,12 +75,31 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(320px, 1fr);
+    grid-template-areas: "box1 box2 box3";
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: auto;
     margin-bottom: 6rem;
+    justify-content: space-around;
+    grid-template-columns: 50px 50px;
+}
+
+.container2 img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.button {
+    background-color: grey;
+    border: none;
+    /* text-align: center;
+    padding: 15px 35px; */
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .container3 {
